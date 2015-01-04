@@ -22,6 +22,12 @@ Since I believe this little project covers a lot of topics, the information outl
 
 Some later extensions to this project might be to allow the end user to control the Motor Shield via some wireless communication. But for now, the scope is to just get the Development Board and the Motor Shield work together.
 
+<p align="center">
+<a title="Demo Video" href="http://www.youtube.com/watch?feature=player_embedded&v=Fk4Gt5CNe6o">
+<img src="http://img.youtube.com/vi/Fk4Gt5CNe6o/0.jpg" alt="Demo Video">
+</a>
+</p>
+
 # Components &amp; Tools
 
 ### IDE's
@@ -80,7 +86,7 @@ Open your Motor Shield Schematic and locate IC3 and you should see the below ima
 
 IC | Motor Shield Schematic | IC Functional Diagram Schematic
 ------------ | ------------- | -------------
-<img src="/docs/imgs/component-ic-74HC595.png" alt="Real IC"> | <img src="/docs/imgs/datasheet-motorshield-IC3" alt="Motor Shield Schematic IC3"> | <img src="/docs/imgs/datasheet-74HC595-shift-register.png" alt="IC Functional Diagram Schematic">
+<img src="/docs/imgs/component-ic-74HC595.png" alt="Real IC"> | <img src="/docs/imgs/datasheet-motorshield-IC3.png" alt="Motor Shield Schematic IC3"> | <img src="/docs/imgs/datasheet-74HC595-shift-register.png" alt="IC Functional Diagram Schematic">
 
 The pins labelled QA through QH are the parallel output pins and therefore inputs into the H-Bridges. Motor 1 is controlled by Pins 2 (QC) and 3 (QD), Motor 2 by Pins 1 (QB) and 4 (QE), etc.
 
