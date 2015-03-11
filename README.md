@@ -1,6 +1,6 @@
 # Introduction
 
-This project is about how to control an Arduino Motor Shield using AVR C. As a complete beginner in microcontroller programming, this project will hopefully give me insight into the following:
+This project is about how to control an Arduino Motor Shield using AVR C. The project will hopefully give us insight into the following:
 
 1. Atmel AVR Chips
 	- Brief understanding of Datasheets
@@ -70,7 +70,7 @@ Let start with the API which will drive the motors. Outlined below is just a hig
 
 ### Datasheets
 
-In my opinion datasheets are not for humans. Somewhere there is a disconnect between the people who design these specifications and the person trying to understand them for the first time. I'm one of those people trying to do something for the first time in microelectronics. So please note, my statements below might not always be accurate and its best that you consult your own datasheets and the Internet/Books for help.
+In my opinion datasheets are not for humans. Somewhere there is a disconnect between the people who design these specifications and the person trying to understand them for the first time. Please note, my statements below might not always be accurate and its best that you consult your own datasheets and the Internet/Books for help.
 
 ### Motor Shield
 
@@ -241,7 +241,7 @@ void delay_ms(uint16_t ms) {
 
 ##### AVR Timers
 
-AVR Timers has been the most difficult concept for me to learn partly because its getting this configuration right which confuses me. The reason I want to use timers is because I'd rather opt-in for hardware controlled timers rather than software controlled timers.
+AVR Timers at first are the most difficult concept to learn partly because its getting the configuration right. The reason I want to use timers is because I'd rather opt-in for hardware controlled timers rather than software controlled timers.
 
 The best place to learn about AVR Timers (IMHO) would be this series of articles listed below.
 I cannot describe Timers as well as Mayank Prasad, so do yourself a favour and read them!
@@ -254,7 +254,7 @@ I cannot describe Timers as well as Mayank Prasad, so do yourself a favour and r
 - http://maxembedded.com/2011/08/avr-timers-pwm-mode-part-i/
 - http://maxembedded.com/2012/01/avr-timers-pwm-mode-part-ii/
 
-Okay lets get back to business. When our Motor Shield is connected to our Development board it talking up Digital Pins 4,7,8,12. The Arduino can generate square waves for PWM on pins 3, 5, 6, 9, 10, 11 and great there is no overlap. Four of the PWM pins are wired directly to the four "enable inputs" on the two motor drivers.
+Okay lets get back to business. When our Motor Shield is connected to our Development board it's talking up Digital Pins 4,7,8,12. The Arduino can generate square waves for PWM on pins 3, 5, 6, 9, 10, 11 and great there is no overlap. Four of the PWM pins are wired directly to the four "enable inputs" on the two motor drivers.
 
 The following shows PWM Pin and its associated motor:
 
